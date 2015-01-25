@@ -39,6 +39,13 @@
 */
 
 $route['default_controller'] = "welcome";
+$route['sleep'] = "first/zzz";
+$route['lock/(:any)/(:any)'] = "welcome/shucks";
+$route['show/(:num)'] = "first/gimme/$1";
+$route['dunno'] = "guess";
+$route['[a-zA-Z]{4}/bingo'] = 'bingo';
+$route['comp[0-9]{4}/.+'] = 'bingo/wisdom'; // There are only 4 digit course numbers
+
 $route['404_override'] = '';
 
 
